@@ -168,6 +168,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.text.MessageFormat;
@@ -193,6 +194,8 @@ import lecho.lib.hellocharts.view.LineChartView;
 import lecho.lib.hellocharts.view.PreviewLineChartView;
 import lombok.Getter;
 import lombok.val;
+
+import com.google.gson.reflect.TypeToken;
 
 public class Home extends ActivityWithMenu implements ActivityCompat.OnRequestPermissionsResultCallback {
     private final static String TAG = "jamorham " + Home.class.getSimpleName();
@@ -1233,7 +1236,8 @@ public class Home extends ActivityWithMenu implements ActivityCompat.OnRequestPe
             String input = readTextFile(in_s);
 
             Gson gson = new Gson();
-            lcs = gson.fromJson(input, wordDataWrapper.class);
+            Type wordDataType = new TypeToken<wordDataWrapper>() {}.getType();
+            lcs = gson.fromJson(input, wordDataType);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -1779,7 +1783,7 @@ public class Home extends ActivityWithMenu implements ActivityCompat.OnRequestPe
         public ArrayList<wordData> entries;
 
         wordDataWrapper() {
-            entries = new ArrayList<>();
+            entries = new ArrayList<>();;
         }
     }
 
