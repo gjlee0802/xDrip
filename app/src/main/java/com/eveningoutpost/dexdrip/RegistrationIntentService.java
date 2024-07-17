@@ -39,11 +39,11 @@ public class RegistrationIntentService extends IntentService {
         final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         final PowerManager.WakeLock wl = JoH.getWakeLock("registration-intent", 120000);
         try {
-            GcmActivity.senderid = getString(R.string.gcm_defaultSenderId);
+            GcmActivity.senderid = getString(R.string.gcm_defaultSenderId); //TODO: investigate gcm_defaultSenderId
             String token = FirebaseInstanceId.getInstance().getToken();
             try {
                 final JSONObject json = new JSONObject(token);
-                final String json_token = json.getString("token");
+                 final String json_token = json.getString("token");
                 if (json_token.length() > 10) token = json_token;
                 Log.d(TAG, "Used json method");
             } catch (Exception e) {

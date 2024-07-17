@@ -8,6 +8,7 @@ import org.bouncycastle.util.BigIntegers;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 import jamorham.keks.util.Log;
 import lombok.Getter;
@@ -40,6 +41,10 @@ public class Context {
     private volatile byte[] partC;
 
     public boolean validateParts() {
+        String partAString = Arrays.toString(partA);
+        String partBString = Arrays.toString(partB);
+        String partCString = Arrays.toString(partC);
+        Log.d("Context", "validateParts: " + partAString + " " + partBString + " " + partCString);
         return partA != null && partB != null && partC != null && partA.length > 100 && partB.length > 100 && partC.length > 100;
     }
 

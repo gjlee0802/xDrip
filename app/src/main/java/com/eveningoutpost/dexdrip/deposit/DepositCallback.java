@@ -8,7 +8,7 @@ import androidx.annotation.RequiresApi;
 import com.eveningoutpost.dexdrip.models.UserError;
 
 import lombok.RequiredArgsConstructor;
-import lombok.var;
+//import lombok.var;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

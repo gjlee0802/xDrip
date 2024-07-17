@@ -1,6 +1,7 @@
 
 plugins {
     id 'com.android.library'
+    id "com.google.gms.google-services"
 }
 repositories {
     google()
@@ -30,6 +31,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'jamorham.libkeks'
 }
 
 

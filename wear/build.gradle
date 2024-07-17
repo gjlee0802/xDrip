@@ -97,6 +97,7 @@ android {
             // Otherwise, all variants use the "dev" flavor configurations.
         }
     }
+    namespace 'com.eveningoutpost.dexdrip'
 }
 
 allprojects {

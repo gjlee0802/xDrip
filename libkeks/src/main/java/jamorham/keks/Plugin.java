@@ -277,10 +277,16 @@ public class Plugin implements IPluginDA {
                         if (context.passwordBytes.length > 4) {
                             changeState(Pairing);
                         } else {
-                            if (context.validateParts()) {
+                            boolean partsValid = context.validateParts();
+                            if (partsValid) {
                                 changeState(SendCertificate0);
                             } else {
-                               throw new InvalidParameterException("Missing QR code");
+                                String passwordBytesString = Arrays.toString(context.passwordBytes);
+                                throw new InvalidParameterException(
+                                        "Missing QR code. passwordBytes: " + passwordBytesString +
+                                                ", length: " + context.passwordBytes.length +
+                                                ", validateParts: " + partsValid
+                                );
                             }
                         }
                         return true;
@@ -487,12 +493,15 @@ public class Plugin implements IPluginDA {
             dontClearAccumulator.clear();
         }
         if (channel == 8) {
+            Log.d("Plugin", "setPartA: " + Arrays.toString(data));
             context.setPartA(data);
         }
         if (channel == 9) {
+            Log.d("Plugin", "setPartB: " + Arrays.toString(data));
             context.setPartB(data);
         }
         if (channel == 10) {
+            Log.d("Plugin", "setPartC: " + Arrays.toString(data));
             context.setPartC(data);
         }
         return false;
