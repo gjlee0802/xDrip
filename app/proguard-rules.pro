@@ -16,9 +16,14 @@
 #   public *;
 #}
 
--dontwarn retrofit.**
--dontwarn retrofit2.**
+#-dontwarn retrofit.**
+#-dontwarn retrofit2.**
 -keep class retrofit.** { *; }
+-if interface *
+-keepclasseswithmembers,allowobfuscation interface <1> {
+  @retrofit2.http.* <methods>;
+}
+-keep class retrofit2.** { *; }
 -keepattributes Signature
 -keepattributes Exceptions
 -keepattributes InnerClasses
@@ -27,7 +32,7 @@
 -dontobfuscate
 
 -dontwarn com.nightscout.**
--dontwarn com.squareup.**
+#-dontwarn com.squareup.**
 -dontwarn net.tribe7.**
 -dontwarn com.mongodb.**
 -dontwarn com.google.common.**
