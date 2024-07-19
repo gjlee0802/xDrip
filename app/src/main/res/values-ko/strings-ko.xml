@@ -567,10 +567,13 @@
     <string name="pref_dialog_influxdb_uri">InfluxDB URI 입력</string>
     <string name="pref_message_influxdb_database">측정값을 저장할 데이터베이스입니다. 서버에서 이것을 생성하는것을 잊지 마세요.</string>
     <string name="pref_dialog_influxdb_database">데이터베이스</string>
+    <string name="pref_dialog_influxdb_bucket">버킷</string>
     <string name="pref_message_influxdb_username">인증을 위한 사용자 명. 인증없이 사용을 허용하지 않는 것이 좋습니다.</string>
     <string name="pref_dialog_influxdb_username">사용자</string>
+    <string name="pref_dialog_influxdb_org">조직</string>
     <string name="pref_message_influxdb_password">인증용 비밀번호. 인증없이 사용을 허용하지 않는 것이 좋습니다.</string>
     <string name="pref_dialog_influxdb_password">비밀번호</string>
+    <string name="pref_dialog_influxdb_token">토큰</string>
     <string name="use_tiny_dots">작은 크기의 점 사용</string>
     <string name="watch_vibrate_active_alerts">혈당 경고시 워치 진동하기</string>
     <string name="vibrate_alerts">알림 진동</string>
@@ -689,7 +692,9 @@
     <string name="mongo_load_transmitter_data_title">리브레 트랜스미터 데이터 업로드</string>
     <string name="influxdb_sync">InfluxDB 동기화 사용</string>
     <string name="influxdb_uri">InfluxDB Uri</string>
-    <string name="influxdb_database_name">InfluxDB 데이터베이스명</string>
+    <string name="influxdb_bucket">InfluxDB 버킷</string>
+    <string name="influxdb_org">InfluxDB 조직</string>
+    <string name="influxdb_token">InfluxDB 토큰</string>
     <string name="user">사용자</string>
     <string name="password">비밀번호</string>
     <string name="upload_to_dexcom">덱스콤 서버에 업로드하려면 활성화 하세요</string>

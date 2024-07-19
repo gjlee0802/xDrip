@@ -571,10 +571,13 @@
     <string name="pref_dialog_influxdb_uri">InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Duomenų bazė, kurioje saugomi duomenys. Nepamirškite sukurti jos serveryje.</string>
     <string name="pref_dialog_influxdb_database">Duombazė</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Vartotojo vardas autentifikacijai. Nenaudokite be autentifikacijos.</string>
     <string name="pref_dialog_influxdb_username">Vartotojas</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Slaptažodis autentifikacijai. Nenaudokite be autentifikacijos.</string>
     <string name="pref_dialog_influxdb_password">Slaptažodis</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Naudoti smulkius taškus</string>
     <string name="watch_vibrate_active_alerts">Aliarmo metu įjungti vibraciją laikrodyje</string>
     <string name="vibrate_alerts">Vibracija</string>
@@ -718,7 +721,9 @@
     <string name="mongo_load_transmitter_data_summary">Tai leidžia daugiau nei vienam xDrip prisijungti prie BT įrenginio, o gautus duomenis saugoti debesyje. Taip Libre su MiaoMiao galės veikti visoje namų erdvėje, taip pat du vaiko tėvai galės gauti to paties BT įrenginio duomenis.</string>
     <string name="influxdb_sync">Įjungti sinchr. su InfluxDB</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB duombazės pavadinimas</string>
+    <string name="influxdb_bucket">InfluxDB duombazės pavadinimas</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Vartotojas</string>
     <string name="password">Slaptažodis</string>
     <string name="upload_to_dexcom">Įjunkite, jei reikia perduoti duomenis Dexcom serveriams</string>

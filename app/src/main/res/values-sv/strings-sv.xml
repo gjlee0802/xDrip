@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Mata in InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Databasen alla mätningar lagras. Kom ihåg att skapa detta på servern.</string>
     <string name="pref_dialog_influxdb_database">Databas</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Användarnamn för inloggning. Det rekommenderas att inte tillåta användning utan autentisering.</string>
     <string name="pref_dialog_influxdb_username">Användare</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Lösenord för autentisering. Det rekommenderas att inte tillåta användning utan autentisering.</string>
     <string name="pref_dialog_influxdb_password">Lösenord</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Använd liten punktstorlek</string>
     <string name="watch_vibrate_active_alerts">Vibrera klockan vid aktiv glukosvarning</string>
     <string name="vibrate_alerts">Vibrera vid larm</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Tillåt flera xDrip att ansluta till BT-enheter och lagra insamlade uppgifter som i molnet. Detta kan göra det möjligt att föräldrar läser samma enhet eller att tex. Libre med MiaoMiao kan nås i hela huset.</string>
     <string name="influxdb_sync">Aktivera InfluxDB-synk</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB Databasenamn</string>
+    <string name="influxdb_bucket">InfluxDB Databasenamn</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Användare</string>
     <string name="password">Lösenird</string>
     <string name="upload_to_dexcom">Aktivera för att ladda upp till Dexcoms servrar</string>

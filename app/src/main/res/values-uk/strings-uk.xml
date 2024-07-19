@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Введіть InfluxDB URL</string>
     <string name="pref_message_influxdb_database">База даних, де зберігаються вимірювання. Не забудьте створити її на сервері</string>
     <string name="pref_dialog_influxdb_database">База даних</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Ім\'я користувача для аутентифікації. Не рекомендується використовувати без аутентифікації</string>
     <string name="pref_dialog_influxdb_username">Користувач</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Пароль для аутентифікації. Не рекомендується використовувати без аутентифікації</string>
     <string name="pref_dialog_influxdb_password">Пароль</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Використовувати зменшений розмір точок</string>
     <string name="watch_vibrate_active_alerts">Вібрація на годиннику при наявності активних сповіщень про глікемію</string>
     <string name="vibrate_alerts">Вібрувати при сповіщеннях</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Дозволити декільком додаткам xDrip+ підключатися до Bluetooth-пристроїв і зберігати отримані значення в хмарі. Ця функція забезпечує покриття по всьому будинку для Libre з MiaoMiao або використання передавача 2-ма батьками одночасно.</string>
     <string name="influxdb_sync">Увімкнути</string>
     <string name="influxdb_uri">InfluxDB URL</string>
-    <string name="influxdb_database_name">Ім\'я бази даних InfluxDB</string>
+    <string name="influxdb_bucket">Ім\'я бази даних InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Ім\'я користувача</string>
     <string name="password">Пароль</string>
     <string name="upload_to_dexcom">Увімкніть цю опцію, щоб завантажувати дані на сервери Dexcom</string>

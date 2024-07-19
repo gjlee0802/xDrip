@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Anna InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Tietokanta, johon mittaukset tallennetaan. Muista luoda tämä palvelimelle.</string>
     <string name="pref_dialog_influxdb_database">Tietokanta</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Käyttäjätunnus kirjautumiseen. Suosittelemme kirjautumisen käyttämistä.</string>
     <string name="pref_dialog_influxdb_username">Käyttäjä</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Salasana tunnistautumiseen. Suosittelemme salasanan käyttöä.</string>
     <string name="pref_dialog_influxdb_password">Salasana</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Käytä hyvin pieniä pisteitä</string>
     <string name="watch_vibrate_active_alerts">Käytä värinää kellon vs-hälytyksissä</string>
     <string name="vibrate_alerts">Värinähälytys</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Salli useamman xDripin muodostaa yhteys Bluetooth-laitteisiin ja tallentaa tiedot, jotka ne saavat pilvestä. Näin Libreen pitäisi saada yhteys koko talossa Miaomiaon avulla, tai kun vanhemmat käyttävät samaa Bluetooth-lukijaa.</string>
     <string name="influxdb_sync">Käytä InfluxDB-synkronointia</string>
     <string name="influxdb_uri">InfluxDB Uri</string>
-    <string name="influxdb_database_name">InfluxDB tietokannan nimi</string>
+    <string name="influxdb_bucket">InfluxDB tietokannan nimi</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Käyttäjä</string>
     <string name="password">Salasana</string>
     <string name="upload_to_dexcom">Käytä tätä tietojen latauksessa Dexcomin palvelimille</string>

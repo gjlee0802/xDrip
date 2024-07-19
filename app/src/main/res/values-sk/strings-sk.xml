@@ -570,10 +570,13 @@
     <string name="pref_dialog_influxdb_uri">Zadaj InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Databáza na ukladanie nameraných hodnôt. Nezabudnite ju na serveri vytvoriť.</string>
     <string name="pref_dialog_influxdb_database">Databáza</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Užívateľské meno. Nie je odporúčané používať bez overenia užívateľa.</string>
     <string name="pref_dialog_influxdb_username">Užívateľ</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Heslo pre prihlásenie. Nie je odporúčané používať bez overenia užívateľa.</string>
     <string name="pref_dialog_influxdb_password">Heslo</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Používať tenučké body</string>
     <string name="watch_vibrate_active_alerts">Vibrovať na hodinkách pri výstrahách glykémie</string>
     <string name="vibrate_alerts">Vibrovať pri výstrahách</string>
@@ -715,7 +718,9 @@
     <string name="mongo_load_transmitter_data_summary">Povoliť viac ako jednému xDripu sa pripájať k BT zariadeniam a ukladať takto získané dáta do cloudu. Toto by malo umožniť režim \"v celom dome\" pre Libre a MiaoMia, alebo pre dvoch rodičov používajúcich ten istý senzor.</string>
     <string name="influxdb_sync">Povoliť synchronizáciu s InfluxDB</string>
     <string name="influxdb_uri">InfluxDB Uri</string>
-    <string name="influxdb_database_name">Názov InfluxDB databázy</string>
+    <string name="influxdb_bucket">Názov InfluxDB databázy</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Užívateľ</string>
     <string name="password">Heslo</string>
     <string name="upload_to_dexcom">Povoliť nahrávanie na servery Dexcom</string>

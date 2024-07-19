@@ -182,25 +182,25 @@
                     android:defaultValue="@string/pref_default_influxdb_database"
                     android:dependency="cloud_storage_influxdb_enable"
                     android:dialogMessage="@string/pref_message_influxdb_database"
-                    android:dialogTitle="@string/pref_dialog_influxdb_database"
+                    android:dialogTitle="@string/pref_dialog_influxdb_bucket"
                     android:inputType="text"
-                    android:key="cloud_storage_influxdb_database"
-                    android:title="@string/influxdb_database_name" />
+                    android:key="cloud_storage_influxdb_bucket"
+                    android:title="@string/influxdb_bucket" />
                 <EditTextPreference
                     android:defaultValue="@string/pref_default_influxdb_username"
                     android:dependency="cloud_storage_influxdb_enable"
                     android:dialogMessage="@string/pref_message_influxdb_username"
-                    android:dialogTitle="@string/pref_dialog_influxdb_username"
+                    android:dialogTitle="@string/pref_dialog_influxdb_org"
                     android:inputType="text"
-                    android:key="cloud_storage_influxdb_username"
-                    android:title="@string/user" />
+                    android:key="cloud_storage_influxdb_org"
+                    android:title="@string/influxdb_org" />
                 <EditTextPreference
                     android:defaultValue="@string/pref_default_influxdb_password"
                     android:dependency="cloud_storage_influxdb_enable"
                     android:dialogMessage="@string/pref_message_influxdb_password"
                     android:dialogTitle="@string/pref_dialog_influxdb_password"
                     android:inputType="text"
-                    android:key="cloud_storage_influxdb_password"
+                    android:key="cloud_storage_influxdb_token"
                     android:title="@string/password" />
                 <CheckBoxPreference
                     android:defaultValue="true"

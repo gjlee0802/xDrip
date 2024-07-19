@@ -254,7 +254,8 @@ public class UploaderQueue extends Model {
                     .where("otype = ?", className)
                     .where("(bitfield_wanted & " + bitfields + ") == " + bitfields)
                     .where("(bitfield_complete & " + bitfields + ") != " + bitfields)
-                    .orderBy("timestamp asc, _id asc") // would _id asc be sufficient?
+                    //.orderBy("timestamp asc, _id asc") // would _id asc be sufficient?
+                    .orderBy("timestamp asc, id asc") // 240718 - GJ Lee
                     .limit(limit)
                     .execute();
         } catch (android.database.sqlite.SQLiteException e) {

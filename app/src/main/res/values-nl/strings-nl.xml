@@ -571,10 +571,13 @@
     <string name="pref_dialog_influxdb_uri">Voer InfluxDB URI in</string>
     <string name="pref_message_influxdb_database">De database waar metingen worden opgeslagen. Vergeet niet om deze aan te maken op de server.</string>
     <string name="pref_dialog_influxdb_database">Database</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Gebruikersnaam voor authenticatie. Het wordt aanbevolen om het gebruik niet toe te staan zonder verificatie.</string>
     <string name="pref_dialog_influxdb_username">Gebruiker</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Wachtwoord voor verificatie. Het wordt aangeraden om gebruik niet toe te staan zonder verificatie.</string>
     <string name="pref_dialog_influxdb_password">Wachtwoord</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Gebruik kleine puntengrootte</string>
     <string name="watch_vibrate_active_alerts">Tril horloge bij actieve glucosewaarschuwingen</string>
     <string name="vibrate_alerts">Trillen bij waarschuwingen</string>
@@ -718,7 +721,9 @@
     <string name="mongo_load_transmitter_data_summary">Sta meer dan één xDrip toe om verbinding te maken met BT-apparaten en de gegevens die ze ontvangen op te slaan in de cloud. Dit zou hele-huis-dekking voor Libre met MiaoMiao mogelijk moeten maken, of 2 ouders die hetzelfde BT-apparaat gezamenlijk gebruiken.</string>
     <string name="influxdb_sync">Schakel InfluxDB-synchronisatie in</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB databasenaam</string>
+    <string name="influxdb_bucket">InfluxDB databasenaam</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Gebruiker</string>
     <string name="password">Wachtwoord</string>
     <string name="upload_to_dexcom">Schakel dit in om te uploaden naar de servers van Dexcom</string>

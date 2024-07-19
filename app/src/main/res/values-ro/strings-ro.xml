@@ -567,10 +567,13 @@
     <string name="pref_dialog_influxdb_uri">Introdu InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Baza de date unde se stochează măsurătorile. Amintește-ți să o creezi pe server.</string>
     <string name="pref_dialog_influxdb_database">Bază de date</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Nume utilizator pentru autentificare. Este recomandat să nu permiteți utilizarea fără autentificare.</string>
     <string name="pref_dialog_influxdb_username">Utilizator</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Parola pentru autentificare. Este recomandat să nu permiteți utilizarea fără autentificare.</string>
     <string name="pref_dialog_influxdb_password">Parolă</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Folosește punct mic</string>
     <string name="watch_vibrate_active_alerts">Vibrare ceas la alertele active de glicemie</string>
     <string name="vibrate_alerts">Vibrare la alertă</string>
@@ -712,7 +715,9 @@
     <string name="mongo_load_transmitter_data_summary">Permiteți mai multor xDrip să se conecteze la dispozitivele BT și să stocheze datele pe care le primesc în cloud. Acest lucru ar trebui să permită acoperirea întregii locuințe pentru Libre cu MiaoMiao sau 2 părinți care utilizează același dispozitiv BT în mod transparent.</string>
     <string name="influxdb_sync">Activează sincronizarea InfluxDB</string>
     <string name="influxdb_uri">InfluxDB Uri</string>
-    <string name="influxdb_database_name">Nume baza de date InfluxDB</string>
+    <string name="influxdb_bucket">Nume baza de date InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Utilizator</string>
     <string name="password">Parolă</string>
     <string name="upload_to_dexcom">Activează acest lucru pentru a încărca datele pe serverele Dexcom</string>

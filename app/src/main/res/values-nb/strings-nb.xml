@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Database for å lagre målinger. Husk å lage denne på serveren.</string>
     <string name="pref_dialog_influxdb_database">Database</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Brukernavn for autentisering. Det er anbefalt å ikke tillate bruk uten autentisering.</string>
     <string name="pref_dialog_influxdb_username">Bruker</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Passord for autentisering. Det er anbefalt å ikke tillate bruk uten autentisering.</string>
     <string name="pref_dialog_influxdb_password">Passord</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Bruk veldig liten punktstørrelse</string>
     <string name="watch_vibrate_active_alerts">Vibrer klokke ved aktivt glukosevarsel</string>
     <string name="vibrate_alerts">Vibrer ved varsel</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Tillat mer enn én xDrip å koble til BT-enheter og lagre dataene de mottar i nettskyen. Dette bør tillate all husdekning for Libre med MiaoMiao, eller 2 foreldre med samme BT-enhet.</string>
     <string name="influxdb_sync">Aktiver synkronisering til InfluxDB</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB databasenavn</string>
+    <string name="influxdb_bucket">InfluxDB databasenavn</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Bruker</string>
     <string name="password">Passord</string>
     <string name="upload_to_dexcom">Aktiver dette for å laste opp blodsukkeravlesninger til Dexcom Share-servere</string>

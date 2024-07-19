@@ -571,10 +571,13 @@
     <string name="pref_dialog_influxdb_uri">输入 InfluxDB URI</string>
     <string name="pref_message_influxdb_database">用于存储测量值的数据库。请记住在服务器上创建此项。</string>
     <string name="pref_dialog_influxdb_database">数据库</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">用于身份验证的密码。建议未经身份验证，不允许使用。</string>
     <string name="pref_dialog_influxdb_username">用户</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">用于身份验证的密码。建议未经身份验证，不允许使用。</string>
     <string name="pref_dialog_influxdb_password">密码</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">使用小点尺寸</string>
     <string name="watch_vibrate_active_alerts">当有血糖警报时，震动手表</string>
     <string name="vibrate_alerts">有报警时震动</string>
@@ -718,7 +721,9 @@
     <string name="mongo_load_transmitter_data_summary">允许多个xDrip 连接到蓝牙设备并存储它们在云端接收的数据。这应该允许所有房间覆盖带有喵喵的瞬感, 或2个父母 同时使用同一个蓝牙设备。</string>
     <string name="influxdb_sync">启用 InfluxDB 同步</string>
     <string name="influxdb_uri">InfluxDB Uri</string>
-    <string name="influxdb_database_name">InfluxDB 数据库名称</string>
+    <string name="influxdb_bucket">InfluxDB 数据库名称</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">用户</string>
     <string name="password">密码</string>
     <string name="upload_to_dexcom">启用此项可将血糖数据上传到 Dexcom 的服务器</string>

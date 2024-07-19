@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Sisesta InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Andmebaas, kuhu salvestatakse mõõtmised. Pea meeles, et see tuleb serveris luua.</string>
     <string name="pref_dialog_influxdb_database">Andmebaas</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Kasutajanimi autentimiseks. Soovitatav on mitte lubada kasutamist ilma autentimiseta.</string>
     <string name="pref_dialog_influxdb_username">Kasutaja</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Parool autentimiseks. Soovitatav on mitte lubada kasutamist ilma autentimiseta.</string>
     <string name="pref_dialog_influxdb_password">Parool</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Kasuta väikest punktisuurust</string>
     <string name="watch_vibrate_active_alerts">Lase kellal vibreerida veresuhkru aktiivse alarmi korral</string>
     <string name="vibrate_alerts">Vibreeri alarmide korral</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Luba rohkem kui ühel xDrip äpil ühenduda BT seadetega ja säilitada andmeid, mida nad pilvest vastu võtavad. Sellega peaks olema üle terve maja kaetud Libre ühendus MiaoMiao\'ga, või kahel vanemal võimalus saada andmeid samast BT seadmest.</string>
     <string name="influxdb_sync">Luba InfluxDB sünkroonimine</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB andmebaasi nimi</string>
+    <string name="influxdb_bucket">InfluxDB andmebaasi nimi</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Kasutaja</string>
     <string name="password">Parool</string>
     <string name="upload_to_dexcom">Luba üleslaadimine Dexcomi serveritesse</string>

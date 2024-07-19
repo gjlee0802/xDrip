@@ -312,10 +312,15 @@
     <string name="pref_message_influxdb_uri">{} の中にある値の例を
 自身の正しい値に置き換えて下さい</string>
     <string name="pref_dialog_influxdb_database">データベース</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_dialog_influxdb_username">ユーザー</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_dialog_influxdb_password">パスワード</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="watch_vibrate_active_alerts">アクティブな通知がウォッチを振動する</string>
     <string name="data_sync">同期</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">ユーザー</string>
     <string name="password">パスワード</string>
     <string name="low_prediction_values">低レベル予測値</string>

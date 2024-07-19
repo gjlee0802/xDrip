@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Wpisz InfluxDB URI</string>
     <string name="pref_message_influxdb_database">Baza danych, gdzie będą przechowywane pomiary. Pamiętaj, aby utworzyć ją na serwerze.</string>
     <string name="pref_dialog_influxdb_database">Baza danych</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Nazwa użytkownika do uwierzytelniania. Zaleca się, aby nie zezwalać na używanie bez uwierzytelniania.</string>
     <string name="pref_dialog_influxdb_username">Użytkownik</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Hasło do uwierzytelniania. Zaleca się, aby nie zezwalać na używanie bez uwierzytelniania.</string>
     <string name="pref_dialog_influxdb_password">Hasło</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Użyj małego rozmiaru kropki</string>
     <string name="watch_vibrate_active_alerts">Wibracja zegarka podczas aktywnych alarmów glikemii</string>
     <string name="vibrate_alerts">Wibracje podczas alarmu</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Zezwól więcej niż jednej aplikacji xDrip na łączenie się z urządzeniami Bluetooth i zapisywanie otrzymanych danych w chmurze. Powinno to dać dostęp wszystkim domownikom do czujników Libre z nadajnikami MiaoMiao lub np. dwójce rodziców chcących korzystać z tego samego urządzenia Bluetooth.</string>
     <string name="influxdb_sync">Włącz synchronizację InfluxDB</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">Nazwa bazy danych InfluxDB</string>
+    <string name="influxdb_bucket">Nazwa bazy danych InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Użytkownik</string>
     <string name="password">Hasło</string>
     <string name="upload_to_dexcom">Włącz to, aby przesłać na serwery Dexcom</string>

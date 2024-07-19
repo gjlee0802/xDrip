@@ -571,10 +571,13 @@
     <string name="pref_dialog_influxdb_uri">הזינו URI של InfluxDB</string>
     <string name="pref_message_influxdb_database">זהו מסד הנתונים בו יאוחסנו הנתונים. זכרו ליצור מסד כזה בשרת.</string>
     <string name="pref_dialog_influxdb_database">מסד נתונים</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">שם משתמש לאימות. מומלץ לא לאפשר שימוש ללא אימות.</string>
     <string name="pref_dialog_influxdb_username">משתמש</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">שם משתמש לאימות. מומלץ לא לאפשר שימוש ללא אימות.</string>
     <string name="pref_dialog_influxdb_password">סיסמה</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">השתמש בגודל נקודות קטנטן</string>
     <string name="watch_vibrate_active_alerts">הפעל רטט בשעון בקבלת התראות סוכר פעילות</string>
     <string name="vibrate_alerts">רטוט בזמן ההתראות</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">אפשר ליותר מ-xDrip אחד להתחבר להתקן הבלוטות\' ולשמור את הנתונים בענן. זה מאפשר כיסוי של כל הבית לליברה עם מיאומיאו, או לשני הורים להשתמש באותו התקן בלוטות\' בצורה שקופה.</string>
     <string name="influxdb_sync">אפשר סינכרון InfluxDB</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">שם מסד נתונים InfluxDB</string>
+    <string name="influxdb_bucket">שם מסד נתונים InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">שם משתמש</string>
     <string name="password">סיסמה</string>
     <string name="upload_to_dexcom">אפשרו כדי להעלות נתונים לשרתי דקסקום</string>

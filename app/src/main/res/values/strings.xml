@@ -597,12 +597,15 @@
     <string name="pref_default_influxdb_database" translatable="false">xdrip</string>
     <string name="pref_message_influxdb_database">The database where to store measurements. Remember to create this on the server.</string>
     <string name="pref_dialog_influxdb_database">Database</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_default_influxdb_username" translatable="false">root</string>
     <string name="pref_message_influxdb_username">Username for authentication. It is recommended to not allow usage without authentication.</string>
     <string name="pref_dialog_influxdb_username">User</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_default_influxdb_password" translatable="false">root</string>
     <string name="pref_message_influxdb_password">Password for authentication. It is recommended to not allow usage without authentication.</string>
     <string name="pref_dialog_influxdb_password">Password</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
 
     <string name="use_tiny_dots">Use tiny dot size</string>
     <string name="watch_vibrate_active_alerts">Vibrate watch on active glucose alerts</string>
@@ -749,7 +752,9 @@
     <string name="mongo_load_transmitter_data_summary">Allow more than one xDrip to connect to BT devices and store the data that they receive in the cloud. This should allow all house coverage for Libre with MiaoMiao, or 2 parents using the same BT device transparently.</string>
     <string name="influxdb_sync">Enable InfluxDB sync</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB database name</string>
+    <string name="influxdb_bucket">InfluxDB bucket</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">User</string>
     <string name="password">Password</string>
     <string name="upload_to_dexcom">Enable this to upload to Dexcom\'s servers</string>

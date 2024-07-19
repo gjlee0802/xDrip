@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Entrer l’URI InfluxDB</string>
     <string name="pref_message_influxdb_database">La base de données où stocker les mesures. N’oubliez pas de la créer sur le serveur.</string>
     <string name="pref_dialog_influxdb_database">Base de données</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Nom d’utilisateur pour l’authentification. Il est recommandé de ne pas permettre son utilisation sans authentification.</string>
     <string name="pref_dialog_influxdb_username">Utilisateur</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Mot de passe pour l’authentification. Il est recommandé de ne pas permettre son utilisation sans authentification.</string>
     <string name="pref_dialog_influxdb_password">Mot de passe</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Utiliser des points de petite taille</string>
     <string name="watch_vibrate_active_alerts">Faire vibrer la montre en cas d\'alertes glycémiques actives</string>
     <string name="vibrate_alerts">Vibrer en cas d\'alertes</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Permettre à plus d\'un xDrip de se connecter aux périphériques BT et stocker les données qu\'ils reçoivent vers le Cloud. Cela devrait permettre une couverture de toute la maison pour le Libre avec MiaoMiao, ou 2 parents utilisant le même dispositif BT de manière transparente.</string>
     <string name="influxdb_sync">Activer la synchronisation InfluxDB</string>
     <string name="influxdb_uri">URI InfluxDB</string>
-    <string name="influxdb_database_name">Nom de la base de données InfluxDB</string>
+    <string name="influxdb_bucket">Nom de la base de données InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Utilisateur</string>
     <string name="password">Mot de passe</string>
     <string name="upload_to_dexcom">Activer ceci pour charger vers les serveurs Dexcom</string>

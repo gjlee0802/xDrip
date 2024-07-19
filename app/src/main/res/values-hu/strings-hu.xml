@@ -570,10 +570,13 @@
     <string name="pref_dialog_influxdb_uri">Adja meg az InfluxDB URI-t</string>
     <string name="pref_message_influxdb_database">A VC-értékeket tároló adatbázis. Ne felejtse el, ezt létrehozni a szerveren.</string>
     <string name="pref_dialog_influxdb_database">Adatbázis</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Felhasználónév az azonosításhoz. Azonosítás nélkül nem ajánlott az adatbázis használata.</string>
     <string name="pref_dialog_influxdb_username">Felhasználónév</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Jelszó az azonosításhoz. Azonosítás nélkül nem ajánlott az adatbázis használata.</string>
     <string name="pref_dialog_influxdb_password">Jelszó</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Apró pontméret használata</string>
     <string name="watch_vibrate_active_alerts">Rezgés VC-érték riasztáskor</string>
     <string name="vibrate_alerts">Rezgés riasztáskor</string>
@@ -716,7 +719,9 @@
     <string name="mongo_load_transmitter_data_summary">Engedély arra, hogy több xDrip app is csatlakozhasson ugyanahhoz a BT eszközhöz. Ez lehetővé teszi a MiaoMiao távadó Libre rendszer teljes lefedettségét vagy hogy egyszerre két személy csatlakozzon ugyanahhoz a BT eszközhöz.</string>
     <string name="influxdb_sync">Bekapcsolás</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB adatbázis neve</string>
+    <string name="influxdb_bucket">InfluxDB adatbázis neve</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Felhasználónév</string>
     <string name="password">Jelszó</string>
     <string name="upload_to_dexcom">Engedélyezze a Dexcom szerverekre feltöltéshez</string>

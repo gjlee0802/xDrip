@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Influx DB URI</string>
     <string name="pref_message_influxdb_database">Base de datos donde almacenar las mediciones. No olvide crear esto en el servidor.</string>
     <string name="pref_dialog_influxdb_database">Base de Datos</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Nombre de usuario para la identificación. Se recomienda no permitir el uso sin identificación.</string>
     <string name="pref_dialog_influxdb_username">Usuario</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Contraseña para la identificación. Se recomienda no permitir el uso sin identificación.</string>
     <string name="pref_dialog_influxdb_password">Contraseña</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Utilizar tamaño de punto pequeño</string>
     <string name="watch_vibrate_active_alerts">Vibrar el reloj con las alertas de glucosa activas</string>
     <string name="vibrate_alerts">Vibrar en alertas</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Permitir que más de un xDrip+ se conecte a dispositivos BT y almacene los datos que reciben en la nube. Esto debería permitir la cobertura de toda la casa para Libre con MiaoMiao, o dos padres utilizando el mismo dispositivo BT de forma transparente.</string>
     <string name="influxdb_sync">Habilitar la sincronización de InfluxDB</string>
     <string name="influxdb_uri">IUR de InfluxDB</string>
-    <string name="influxdb_database_name">Nombre de la base de datos de InfluxDB</string>
+    <string name="influxdb_bucket">Nombre de la base de datos de InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="upload_to_dexcom">Activa esta opción para subir a los servidores de Dexcom</string>

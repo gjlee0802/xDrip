@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Inserir URL do InfluxDB</string>
     <string name="pref_message_influxdb_database">O banco de dados onde serão armazenadas as medições. Lembre-se de criar isso no servidor.</string>
     <string name="pref_dialog_influxdb_database">Banco de dados</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Nome de usuário para autenticação. É recomendável não permitir uso sem autenticação.</string>
     <string name="pref_dialog_influxdb_username">Usuário</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Senha para autenticação. É recomendável não permitir uso sem autenticação.</string>
     <string name="pref_dialog_influxdb_password">Senha</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Usar tamanho de ponto pequeno</string>
     <string name="watch_vibrate_active_alerts">Vibrar relógio em alertas de glicose ativos</string>
     <string name="vibrate_alerts">Vibrar nos alertas</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Permite que mais de um xDrip conecte-se a dispositivos BT e armazene os dados que eles recebem na nuvem. Isso deve permitir o acesso de toda a casa para Libre com MiaoMiao, ou 2 pais usando o mesmo dispositivo BT de forma transparente.</string>
     <string name="influxdb_sync">Ativar sincronização InfluxDB</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">Nome do banco de dados InfluxDB</string>
+    <string name="influxdb_bucket">Nome do banco de dados InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Usuário</string>
     <string name="password">Senha</string>
     <string name="upload_to_dexcom">Envia os valores de glicose para os servidores da Dexcom</string>

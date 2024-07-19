@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Gib die InfluxDB URI ein</string>
     <string name="pref_message_influxdb_database">Die Datenbank, in der Messungen gespeichert werden. Denke daran, diese auf dem Server zu erstellen.</string>
     <string name="pref_dialog_influxdb_database">Datenbank</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Benutzername für die Authentifikation. Es ist nicht empfohlen, die Nutzung ohne Authentifikation zu erlauben.</string>
     <string name="pref_dialog_influxdb_username">Benutzer</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Passwort für die Authentifikation. Es ist nicht empfohlen die Nutzung ohne Authentifikation zu erlauben.</string>
     <string name="pref_dialog_influxdb_password">Passwort</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Benutze die kleine Punktgröße</string>
     <string name="watch_vibrate_active_alerts">Lass die Uhr bei aktiven Glukosealarmen vibrieren.</string>
     <string name="vibrate_alerts">Bei Alarmen vibrieren</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Erlaube mehr als einer xDrip-App, eine Verbindung zu Bluetooth-Geräten herzustellen und die Daten, die sie empfangen, in der Cloud zu speichern. Dies sollte die vollständige Abdeckung für Libre mit MiaoMiao-Transmitter oder zwei Eltern ermöglichen, die dasselbe Bluetooth-Gerät verwenden.</string>
     <string name="influxdb_sync">InfluxDB Synchronisation aktivieren</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">InfluxDB Datenbankname</string>
+    <string name="influxdb_bucket">InfluxDB Datenbankname</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Benutzer</string>
     <string name="password">Passwort</string>
     <string name="upload_to_dexcom">Aktiviere dies zum Hochladen auf Dexcoms Server.</string>

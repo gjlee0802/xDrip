@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Введите InfluxDB URI</string>
     <string name="pref_message_influxdb_database">База данных, где хранятся измерения. Не забудьте создать ее на сервере.</string>
     <string name="pref_dialog_influxdb_database">База данных</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Имя пользователя для аутентификации. Не рекомендуется использовать без аутентификации.</string>
     <string name="pref_dialog_influxdb_username">Пользователь</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Пароль для аутентификации. Не рекомендуется использовать без аутентификации.</string>
     <string name="pref_dialog_influxdb_password">Пароль</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Использовать крошечный размер точек</string>
     <string name="watch_vibrate_active_alerts">Вибрация на часах при наличии активных оповещений о гликемии</string>
     <string name="vibrate_alerts">Вибрировать при уведомлении</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Разрешить нескольким приложениям xDrip подключаться к Bluetooth устройства и сохранять полученные значения в облаке. Данная функция обеспечивает покрытие по всему дому для LIbre c MiaoMiao или использование передатчика 2-мя родителями одновременно.</string>
     <string name="influxdb_sync">Включить синхронизацию с InfluxDB</string>
     <string name="influxdb_uri">InfluxDB URI</string>
-    <string name="influxdb_database_name">Имя базы данных InfluxDB</string>
+    <string name="influxdb_bucket">Имя базы данных InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Имя пользователя</string>
     <string name="password">Пароль</string>
     <string name="upload_to_dexcom">Включите данную опцию, чтобы загружать данные на серверы Dexcom</string>

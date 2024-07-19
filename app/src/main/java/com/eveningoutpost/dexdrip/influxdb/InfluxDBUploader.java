@@ -28,6 +28,7 @@ import com.influxdb.client.WriteApi;
 import java.io.IOException;
 import java.time.Instant;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -42,19 +43,19 @@ public class InfluxDBUploader {
     private static final String TAG = InfluxDBUploader.class.getSimpleName();
     private static String last_error;
     private SharedPreferences prefs;
-    private String dbName;
+    private String dbBucket;
     private String dbUri;
-    private String dbUser;
-    private String dbPassword;
+    private String dbOrg;
+    private String dbToken;
+    private InfluxDBClient influxDBClient;
     private OkHttpClient.Builder client;
 
     public InfluxDBUploader(Context context) {
-        //Context mContext = context;
         prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        dbName = prefs.getString("cloud_storage_influxdb_database", null);
+        dbBucket = prefs.getString("cloud_storage_influxdb_bucket", null);
         dbUri = prefs.getString("cloud_storage_influxdb_uri", null);
-        dbUser = prefs.getString("cloud_storage_influxdb_username", null);
-        dbPassword = prefs.getString("cloud_storage_influxdb_password", null);
+        dbOrg = prefs.getString("cloud_storage_influxdb_org", null);
+        dbToken = prefs.getString("cloud_storage_influxdb_token", null);
 
         client = new OkHttpClient.Builder()
                 .connectTimeout(CONNECTION_TIMEOUT, TimeUnit.MILLISECONDS)
@@ -69,26 +70,32 @@ public class InfluxDBUploader {
                         return chain.proceed(chain.request().newBuilder().url(fixedUrl.build()).build());
                     }
                 });
+
+        // Initialize InfluxDB client
+        Log.d(TAG, "dbUri: " + dbUri);
+        Log.d(TAG, "dbBucket: " + dbBucket);
+        Log.d(TAG, "dbOrg: " + dbOrg);
+        Log.d(TAG, "dbToken: " + dbToken);
+        influxDBClient = InfluxDBClientFactory.create(dbUri, dbToken.toCharArray(), dbOrg, dbBucket);
     }
 
-
-    // For InfluxDB 1.x
-    /*
+    // For InfluxDB 2.x
     public boolean upload(List<BgReading> glucoseDataSets, List<Calibration> meterRecords, List<Calibration> calRecords) {
         try {
-            BatchPoints batchPoints = BatchPoints
-                    .database(dbName)
-                    .retentionPolicy("autogen")
-                    .consistency(InfluxDB.ConsistencyLevel.ALL)
-                    .build();
+            // For Influx 2.x
+            //InfluxDBClient influxDBClient = InfluxDBClientFactory.create(dbUri, dbToken.toCharArray());
+            String bucket = dbBucket; // 버킷 이름을 여기에 설정하십시오
+            String org = dbOrg; // 조직 이름을 여기에 설정하십시오
+            WriteApi writeApi = influxDBClient.getWriteApi();
 
+            List<Point> batchPoints = new ArrayList<>();
 
             for (BgReading record : glucoseDataSets) {
                 if (record == null) {
                     Log.e(TAG, "InfluxDB glucose record is null");
                     continue;
                 }
-                batchPoints.point(createGlucosePoint(record));
+                batchPoints.add(createGlucosePoint(record));
             }
 
             for (Calibration record : meterRecords) {
@@ -96,7 +103,7 @@ public class InfluxDBUploader {
                     Log.e(TAG, "InfluxDB meter record is null");
                     continue;
                 }
-                batchPoints.point(createMeterPoint(record));
+                batchPoints.add(createMeterPoint(record));
             }
 
             for (Calibration record : calRecords) {
@@ -105,83 +112,21 @@ public class InfluxDBUploader {
                     continue;
                 }
                 if (record.slope == 0d) continue;
-                batchPoints.point(createCalibrationPoint(record));
+                batchPoints.add(createCalibrationPoint(record));
             }
 
             try {
-                Log.d(TAG, "Influx url: " + dbUri);
-                InfluxDBFactory.connect(dbUri, dbUser, dbPassword, client).enableGzip().write(batchPoints);
+                // Write all points at once
+                writeApi.writePoints(bucket, org, batchPoints);
                 last_error = null;
                 return true;
-            } catch (java.lang.ExceptionInInitializerError e) {
-                Log.e(TAG, "InfluxDB failed: " + e.getCause());
-                return false;
-            } catch (java.lang.NoClassDefFoundError e) {
-                Log.e(TAG, "InfluxDB failed more: " + e);
-                return false;
-            } catch (IllegalArgumentException e) {
-                Log.wtf(TAG, "InfluxDB problem: " + e);
-                return false;
             } catch (Exception e) {
                 Log.e(TAG, "Write to InfluxDB failed: " + e);
                 last_error = e.getMessage();
                 return false;
             }
         } catch (Exception e) {
-            Log.wtf(TAG, "Exception during initialization: ", e);
-            return false;
-        }
-    }
-    */
-
-    // For InfluxDB 2.x
-    public boolean upload(List<BgReading> glucoseDataSets, List<Calibration> meterRecords, List<Calibration> calRecords) {
-        try {
-            // For Influx 2.x
-            InfluxDBClient influxDBClient = InfluxDBClientFactory.create(dbUri, "my-token".toCharArray());
-            String bucket = "cgm-engineering-mode"; // 버킷 이름을 여기에 설정하십시오
-            String org = "iclab"; // 조직 이름을 여기에 설정하십시오
-            WriteApi writeApi = influxDBClient.getWriteApi();
-
-            for (BgReading record : glucoseDataSets) {
-                if (record == null) {
-                    Log.e(TAG, "InfluxDB glucose record is null");
-                    continue;
-                }
-                writeApi.writePoint(bucket, org, createGlucosePoint(record));
-            }
-
-            for (Calibration record : meterRecords) {
-                if (record == null) {
-                    Log.e(TAG, "InfluxDB meter record is null");
-                    continue;
-                }
-                writeApi.writePoint(bucket, org, createMeterPoint(record));
-            }
-
-            for (Calibration record : calRecords) {
-                if (record == null) {
-                    Log.e(TAG, "InfluxDB calibration record is null");
-                    continue;
-                }
-                if (record.slope == 0d) continue;
-                writeApi.writePoint(bucket, org, createCalibrationPoint(record));
-            }
-
-            influxDBClient.close();
-            last_error = null;
-            return true;
-        } catch (java.lang.ExceptionInInitializerError e) {
-            Log.e(TAG, "InfluxDB failed: " + e.getCause());
-            return false;
-        } catch (java.lang.NoClassDefFoundError e) {
-            Log.e(TAG, "InfluxDB failed more: " + e);
-            return false;
-        } catch (IllegalArgumentException e) {
-            Log.wtf(TAG, "InfluxDB problem: " + e);
-            return false;
-        } catch (Exception e) {
-            Log.e(TAG, "Write to InfluxDB failed: " + e);
+            Log.e(TAG, "Exception during initialization or batch point creation: ", e);
             last_error = e.getMessage();
             return false;
         }
@@ -243,7 +188,67 @@ public class InfluxDBUploader {
         return builder;//builder.build();
     }
 
+    // For InfluxDB 1.x
     /*
+    public boolean upload(List<BgReading> glucoseDataSets, List<Calibration> meterRecords, List<Calibration> calRecords) {
+        try {
+            BatchPoints batchPoints = BatchPoints
+                    .database(dbName)
+                    .retentionPolicy("autogen")
+                    .consistency(InfluxDB.ConsistencyLevel.ALL)
+                    .build();
+
+
+            for (BgReading record : glucoseDataSets) {
+                if (record == null) {
+                    Log.e(TAG, "InfluxDB glucose record is null");
+                    continue;
+                }
+                batchPoints.point(createGlucosePoint(record));
+            }
+
+            for (Calibration record : meterRecords) {
+                if (record == null) {
+                    Log.e(TAG, "InfluxDB meter record is null");
+                    continue;
+                }
+                batchPoints.point(createMeterPoint(record));
+            }
+
+            for (Calibration record : calRecords) {
+                if (record == null) {
+                    Log.e(TAG, "InfluxDB calibration record is null");
+                    continue;
+                }
+                if (record.slope == 0d) continue;
+                batchPoints.point(createCalibrationPoint(record));
+            }
+
+            try {
+                Log.d(TAG, "Influx url: " + dbUri);
+                InfluxDBFactory.connect(dbUri, dbUser, dbPassword, client).enableGzip().write(batchPoints);
+                last_error = null;
+                return true;
+            } catch (java.lang.ExceptionInInitializerError e) {
+                Log.e(TAG, "InfluxDB failed: " + e.getCause());
+                return false;
+            } catch (java.lang.NoClassDefFoundError e) {
+                Log.e(TAG, "InfluxDB failed more: " + e);
+                return false;
+            } catch (IllegalArgumentException e) {
+                Log.wtf(TAG, "InfluxDB problem: " + e);
+                return false;
+            } catch (Exception e) {
+                Log.e(TAG, "Write to InfluxDB failed: " + e);
+                last_error = e.getMessage();
+                return false;
+            }
+        } catch (Exception e) {
+            Log.wtf(TAG, "Exception during initialization: ", e);
+            return false;
+        }
+    }
+
     private Point createGlucosePoint(BgReading record) {
         // TODO DisplayGlucose option
         final BigDecimal delta = new BigDecimal(record.calculated_value_slope * 5 * 60 * 1000)

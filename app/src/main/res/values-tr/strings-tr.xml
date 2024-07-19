@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">InfluxDB URI adresini girin</string>
     <string name="pref_message_influxdb_database">Ölçümlerin depolandığı veritabanı. Bunu sunucuda oluşturmayı unutmayın.</string>
     <string name="pref_dialog_influxdb_database">Veritabanı</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Kimlik doğrulama için kullanıcı adı. Kimlik doğrulama olmadan kullanılmaması önerilir.</string>
     <string name="pref_dialog_influxdb_username">Kullanıcı</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Kimlik doğrulama için şifre. Kimlik doğrulama olmadan kullanılmaması önerilir.</string>
     <string name="pref_dialog_influxdb_password">Şifre</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Minik nokta boyutunu kullan</string>
     <string name="watch_vibrate_active_alerts">Aktif glikoz uyarılarında saati titreştir</string>
     <string name="vibrate_alerts">Uyarılarda Titreşim</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Birden fazla xDrip\'in BT cihazlarına bağlanmasına ve aldıkları verileri bulutta depolamasına izin verin. Bu özellik, MiaoMiao kullanılıyorsa tüm evdekilere, veya aynı BT cihazını kullanan 2 ebeveyne izin verir.</string>
     <string name="influxdb_sync">InfluxDB senkronizasyonunu etkinleştir</string>
     <string name="influxdb_uri">InfluxDB Uri Adresi</string>
-    <string name="influxdb_database_name">InfluxDB Veritabanı Adı</string>
+    <string name="influxdb_bucket">InfluxDB Veritabanı Adı</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Kullanıcı</string>
     <string name="password">Şifre</string>
     <string name="upload_to_dexcom">Dexcom\'un sunucularına yüklemek için bunu etkinleştirin</string>

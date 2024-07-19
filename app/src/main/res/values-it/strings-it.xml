@@ -572,10 +572,13 @@
     <string name="pref_dialog_influxdb_uri">Inserisci l\'URI di InfluxDB</string>
     <string name="pref_message_influxdb_database">Il database dove salvare le misure. Ricordati di crearlo sul server.</string>
     <string name="pref_dialog_influxdb_database">Database</string>
+    <string name="pref_dialog_influxdb_bucket">Bucket</string>
     <string name="pref_message_influxdb_username">Nome utente per l\'autenticazione. Si consiglia di non consentire l\'utilizzo senza autenticazione.</string>
     <string name="pref_dialog_influxdb_username">Nome utente</string>
+    <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_message_influxdb_password">Password per l\'autenticazione. Si consiglia di non consentire l\'utilizzo senza autenticazione.</string>
     <string name="pref_dialog_influxdb_password">Password</string>
+    <string name="pref_dialog_influxdb_token">Token</string>
     <string name="use_tiny_dots">Usa punti piccolissimi</string>
     <string name="watch_vibrate_active_alerts">Vibrazione smartwatch per allarmi glicemia attivi</string>
     <string name="vibrate_alerts">Vibra ad ogni allarme</string>
@@ -719,7 +722,9 @@
     <string name="mongo_load_transmitter_data_summary">Autorizza a più di un xDrip di connettersi al dispositivo Bluetooth e salvare i dati ricevuti, nel cloud. Dovrebbe consentire la copertura di tutta la casa per Libre Bluetooth, oppure a due genitori di utilizzare lo stesso dispositivo bluetooth di modo trasparente.</string>
     <string name="influxdb_sync">Abilita sincronizzazione InfluxDB</string>
     <string name="influxdb_uri">URI InfluxDB</string>
-    <string name="influxdb_database_name">Nome database InfluxDB</string>
+    <string name="influxdb_bucket">Nome database InfluxDB</string>
+    <string name="influxdb_org">InfluxDB organization</string>
+    <string name="influxdb_token">InfluxDB token</string>
     <string name="user">Utente</string>
     <string name="password">Password</string>
     <string name="upload_to_dexcom">Abilitare per caricare sui server Dexcom</string>
