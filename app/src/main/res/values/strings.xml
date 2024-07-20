@@ -597,14 +597,17 @@
     <string name="pref_default_influxdb_database" translatable="false">xdrip</string>
     <string name="pref_message_influxdb_database">The database where to store measurements. Remember to create this on the server.</string>
     <string name="pref_dialog_influxdb_database">Database</string>
+    <string name="pref_default_influxdb_bucket" translatable="false">bucket</string>
     <string name="pref_dialog_influxdb_bucket">Bucket</string>
-    <string name="pref_default_influxdb_username" translatable="false">root</string>
+    <string name="pref_default_influxdb_username" translatable="false">user</string>
     <string name="pref_message_influxdb_username">Username for authentication. It is recommended to not allow usage without authentication.</string>
     <string name="pref_dialog_influxdb_username">User</string>
+    <string name="pref_default_influxdb_org"> translatable="false">iclab</string>
     <string name="pref_dialog_influxdb_org">Organization</string>
     <string name="pref_default_influxdb_password" translatable="false">root</string>
     <string name="pref_message_influxdb_password">Password for authentication. It is recommended to not allow usage without authentication.</string>
     <string name="pref_dialog_influxdb_password">Password</string>
+    <string name="pref_default_influxdb_token" translatable="false">token</string>
     <string name="pref_dialog_influxdb_token">Token</string>
 
     <string name="use_tiny_dots">Use tiny dot size</string>
